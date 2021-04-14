@@ -1,0 +1,256 @@
+body{
+  overflow-x: hidden;
+  background: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+}
+.info__card h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+header {
+  padding: 20px 0 0 0;
+  background: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.logo__container {
+  width: 50%;
+  margin-left: 20px;
+}
+.carrito__container {
+  width: 50%;
+}
+.carrito__container ul{
+  float: right;
+  margin-right: 30px;
+}
+.submenu {
+  position: relative;
+  list-style-type: none;
+  width: 50%;
+}
+.submenu #carrito{
+  display: none;
+}
+.submenu:hover #carrito{
+  display: block;
+  position: absolute;
+  right:0;
+  top:100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+.vacio {
+  padding: 10px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.borrar-curso {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+#lista-cursos {
+  padding: 30px 0;
+}
+.encabezado__cursos{
+  margin-bottom: 30px;
+}
+.cursos__container{
+  margin-top: 30px;
+  display: grid;
+  grid-gap: 25px;
+	max-width: 1080px;
+	margin: 0 auto;
+  padding: 0 10px;
+}
+.curso__item{
+  border: 1px solid rgba(0,0,0,0.25);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card__img, .imagen__curso{
+  width: 100%;
+}
+.info__card{
+  padding: 10px 10px;
+  position: relative;
+  height: 160px;
+}
+.info__card *{
+  margin-bottom: 10px;
+}
+.precio{
+  text-decoration: line-through;
+  color: red;
+}
+.discount{
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 1.25em;
+}
+.agregar-carrito{
+  background: #00B2BD;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0;
+}
+.agregar-carrito:hover{
+  background: #00828a;
+  color: white;
+}
+.fa{    margin-bottom: 0;}
+@media (min-width: 750px) {
+  header {
+    text-align: left;
+  }
+}
+
+@media (min-width: 472px) and (max-width: 767px) {
+  .cursos__container{
+    grid-template-columns: 1fr 1fr;
+   }
+ }
+ @media all and (min-width: 768px) {
+  .cursos__container{
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+ }
+ @media all and (min-width: 949px) {
+   .cursos__container{
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+ }
+#logo{
+  height:85px;
+  width: 85px;
+}
+/**************/
+/* 2 sub-level  click or tab me menu by GCyrillus (Griboval Cyrille)
+update with onclick="" (trick for touch) TO BE TESTED !	
+ original http://dabblet.com/gist/2906473 */
+ html {height:100%;margin:0;padding:0;background:#417C9B;
+  background-image:
+    radial-gradient(5% 5%,#F7E704 5%, transparent 30% ),
+    radial-gradient(50% 80%, hsla(204, 67%, 61%, 0.7),  #444),
+    linear-gradient(-90deg,#000,#09a)
+    ;
+  background-repeat:no-repeat;
+  background-size: 900px 900px , 100%,100%;
+  }
+  body {margin:0;padding:0;
+  }
+  .tabmenu {font-family:arial;font-size:16px;line-height:1.8em;background:#333;
+  display:table;
+  padding:0;margin:1em auto;
+  border-spacing:0;padding:0.5em;
+  border-radius:0.5em;border:1px solid #777;box-shadow:0 0 3px #999;
+  white-space:nowrap;
+  }
+  .tabmenu li  p  {border-radius: 0.5em 0.5em 0  0 ; }
+  .tabmenu li ul li:last-child a {border-radius: 0  0 0.5em 0.5em ;}
+  .tabmenu ul {display:table;margin:0;padding:0;position:absolute;
+  left:-9999px;z-index:1;top:1.6em;}
+  .tabmenu  > li {
+  display:inline-block;
+  width:150px;
+  vertical-align:top;
+  position:relative;
+  white-space:normal;
+  }
+  .tabmenu ul li {
+  float:right;
+  list-style-type:none;
+  clear:right;
+  height:1.6em;
+  }
+  .tabmenu li a , .tabmenu p {border:solid 1px #333;background-color:gray;background-image:linear-gradient(90deg,#aaa,#eee);
+  display:block;
+  width:150px;
+  text-indent:1em;
+  margin:0;
+  outline:0;
+  text-decoration:none;
+  color:#333;
+  }
+  .tabmenu li a  {
+  box-shadow: 0px 3px 10px  -5px black;float:right;
+  }
+  .tabmenu p {position:relative;height:1.6em;}
+  .tabmenu p:after {content:'\25BC';position:absolute;right:5px;text-shadow:1px 1px 1px gray;}
+  .tabmenu p:focus:after {content:'';}
+  .tabmenu p a {display:inline;position:absolute;border:0;left:-9999px;background:transparent;
+  color:#E68F28;text-shadow:0 0 1px black,0 0 2px white;text-decoration:none;text-align:right;width:auto;
+  padding-right:5px;
+  }
+  .tabmenu p:focus a {top:0;left:0;right:0;bottom:0;}
+  .tabmenu ul a:focus , .tabmenu p:focus + ul li a {
+  margin-left:9999px;
+  }
+  .tabmenu a:focus:before {content:'\25BA';margin-left:-1em;color:#E9CF5F;}
+  :focus {font-variant:small-caps;text-shadow:0 0 1px #333, 0 0 5px gray;}
+  [tabindex] {cursor:pointer;}
+   .tabmenu ul ul{left:150px;position:relative;
+   top:-1.95em;
+   width:150px;
+   display:table;
+   margin:0 0 0 -9999px;
+   z-index:1;
+   }
+   .tabmenu ul ul a {margin-left:-9999px;}
+   .tabmenu ul ul li a:focus  {
+   margin-left:19998px;
+  }
+  .tabmenu ul ul li:first-child a {
+  border-radius:0 0.5em 0 0 ;
+  }
+  .tabmenu ul li a:focus.fermoir  + ul {
+  margin-left:10001px;
+  }
+  .tabmenu ul li .fermoir {
+  position:absolute;
+  z-index:1;
+  right:1px;
+  margin-top:1px;
+  border:0;
+  width:auto;
+  background:none;
+  box-shadow:none;
+  padding: 0 5px 0 20px;
+  text-indent:0;
+  line-height:1.4em;
+  }
+  .fermoir:before {display:none;}
+  .tabmenu ul li .fermoir:focus , p.tabmenu {color:white;}
+
+  .row{
+    display: flex;
+    background-color: #39b918;
+  }
+  .container{
+    background-color: #E68F28;
+  }
+  .header{
+    background-color: aqua;
+  }

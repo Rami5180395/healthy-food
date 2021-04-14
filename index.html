@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="row">
+        <div class="four columns">
+          <img src="img/logo.png" id="logo">
+        </div> 
+        
+        <div>
+          <!--[if lte ie 7]>
+<style>.tabmenu {display:none;}p {display:inline;zoom:1;background:#333;color:#eee;text-align:left;margin:9em 0 0;font-size:1.5em;padding:0.5em;}body{text-align:center;}</style>
+<p>Cette demo est dédié aux navigateurs relativement récents,<br/> Pour IE, on évoque la version 8 au moins</p>
+<p>recent dem, best to see in IE8 or later</p>
+<![endif]-->
+<ul class="tabmenu">
+	<li><p tabindex="0" onclick="" > BOWLS <a href="#" tabindex="-1" title="" class="fermoir">&#9650;</a></p>
+		  <ul>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+		  </ul>
+	</li>
+
+	<li><p tabindex="0"  onclick=""> BOWLS CHAUD  <a href="#" tabindex="-1" title="" class="fermoir">&#9650;</a></p>
+		  <ul>
+			    <li><a href="#" tabindex="0" >lien</a></li>
+			    <li><a href="#" tabindex="0" >lien</a><a class="fermoir" tabindex="-1" onclick="" href="#none">&#9658;</a>
+				    <ul>
+					  <li><a href="#" tabindex="0" >lien</a></li>
+					  <li><a href="#" tabindex="0" >lien</a></li>
+					  <li><a href="#" tabindex="0" >lien</a></li>
+					  <li><a href="#" tabindex="0" >lien</a></li>
+					  <li><a href="#" tabindex="0" >lien</a></li>
+				   </ul>
+			    </li>
+			    <li><a href="#" tabindex="0" >lien</a></li>
+			    <li><a href="#" tabindex="0" >lien</a></li>
+			    <li><a href="#" tabindex="0" >lien</a></li>
+		  </ul>
+	</li>
+
+	<li><p tabindex="0" onclick="" > DESSERT <a href="#" tabindex="-1" title="" class="fermoir">&#9650;</a></p>
+		  <ul>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+		  </ul>
+	</li>
+<li><p tabindex="0"  onclick=""> BOISSON <a href="#" tabindex="-1" title="" class="fermoir">&#9650;</a></p>
+		  <ul>
+			    <li><a href="#" tabindex="0" >lien</a></li>
+			    <li><a href="#" tabindex="0" >lien</a><a class="fermoir" tabindex="-1" onclick="" href="#none">&#9658;</a>
+				    <ul>
+					  <li><a href="#" tabindex="0" >lien</a></li>
+					  <li><a href="#" tabindex="0" >lien</a></li>
+					  <li><a href="#" tabindex="0" >lien</a></li>
+					  <li><a href="#" tabindex="0" >lien</a></li>
+					  <li><a href="#" tabindex="0" >lien</a></li>
+				   </ul>
+			    </li>
+			    <li><a href="#" tabindex="0" >lien</a></li>
+			    <li><a href="#" tabindex="0" >lien</a></li>
+			    <li><a href="#" tabindex="0" >lien</a></li>
+		  </ul>
+	</li>
+
+	<li><p tabindex="0" onclick="" > JUS <a href="#" tabindex="-1" title="" class="fermoir">&#9650;</a></p>
+		  <ul>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+			   <li><a href="#" tabindex="0" >lien</a></li>
+		  </ul>
+	</li>
+</ul>
+
+
+        </div>
+
+
+
+        </div>
+        <div class="two columns u-pull-right">
+          <ul>
+            <li class="submenu">
+              <img src="img/cart.png" id="img-carrito">
+              <div id="carrito">
+                <table id="lista-carrito" class="u-full-width">
+                  <thead>
+                    <tr>
+                      <th>Produit</th>
+                      <th>Nombre</th>
+                      <th>Prix</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+
+  <div id="lista-cursos">
+    <h1 id="encabezado__cursos">NOS PRODUITS</h1>
+
+    <div class="cursos__container">
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso1.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>CHEESE</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#" class="agregar-carrito" data-id="1"><i class="fa fa-cart-plus"></i>&nbsp;  AJOUTER AU PANIER</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso2.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>Comida Vegetarienne</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#" class="agregar-carrito" data-id="2"><i class="fa fa-cart-plus"></i>&nbsp;  AJOUTER AU PANIER</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso3.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>harissa nabliya</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="3"><i class="fa fa-cart-plus"></i>&nbsp;  AJOUTER AU PANIER</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso4.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>sausse tomate</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="4"><i class="fa fa-cart-plus"></i>&nbsp;  AJOUTER AU PANIER</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso5.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>zouza</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="5"><i class="fa fa-cart-plus"></i>&nbsp;  AJOUTER AU PANIER</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso1.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>CHEESE</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="6"><i class="fa fa-cart-plus"></i>&nbsp;  AJOUTER AU PANIER</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso2.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>Comida Mexicaine</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="7"><i class="fa fa-cart-plus"></i>&nbsp;  AJOUTER AU PANIER</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso3.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>harissa nabliya</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#" class="agregar-carrito"  data-id="8"><i class="fa fa-cart-plus"></i>&nbsp;  AJOUTER AU PANIER</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso4.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>sausse tomate</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#" class="agregar-carrito"  data-id="9"><i class="fa fa-cart-plus"></i>&nbsp;  AJOUTER AU PANIER</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso5.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>zouza</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="10"><i class="fa fa-cart-plus"></i>&nbsp;  AJOUTER AU PANIER</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso1.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>CHEESE</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="11"><i class="fa fa-cart-plus"></i>&nbsp;  AJOUTER AU PANIER</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso2.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>Comida</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="12"><i class="fa fa-cart-plus"></i>&nbsp;  AJOUTER AU PANIER</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
